@@ -29,7 +29,7 @@ This repository contains the **complete multi-agent system**:
 cd /Users/mac/Projects
 
 # Clone council system (coordination infrastructure)
-git clone https://github.com/I-Onlabs/claude-code-hub.git
+git clone https://github.com/I-Onlabs/claude-code-council.git
 
 # Clone agents (21 specialists with expertise_weights)
 git clone https://github.com/I-Onlabs/claude-code-agents.git
@@ -42,8 +42,8 @@ git clone https://github.com/I-Onlabs/claude-code-skills.git
 
 ```bash
 # Install council system
-cp -r claude-code-hub/council ~/.claude/
-cp -r claude-code-hub/lib ~/.claude/
+cp -r claude-code-council/council ~/.claude/
+cp -r claude-code-council/lib ~/.claude/
 
 # Install agents
 cp claude-code-agents/*.md ~/.claude/agents/
@@ -76,7 +76,7 @@ This gives you:
 
 ```
 ┌──────────────────────────────────────────┐
-│ claude-code-hub (THIS REPO)              │
+│ claude-code-council (THIS REPO)          │
 │ ├── council/     Council system          │
 │ └── lib/         Message bus             │
 └──────────────────────────────────────────┘
@@ -100,6 +100,8 @@ This gives you:
 - **Flexible use** - Use provided agents/skills or bring your own
 
 **Local Backup:** Your local `/Projects/claude-code-hub` contains **everything** (council + agents + skills) for easy backup and restore.
+
+**Note:** The local folder is still named `claude-code-hub` for historical reasons, but it contains the `claude-code-council` repository.
 
 ---
 
@@ -213,7 +215,7 @@ python3 ~/.claude/council/test_phase4.py
 
 | Repository | Description | Size |
 |------------|-------------|------|
-| **claude-code-hub** (this) | Council + Message Bus | ~2.7K lines |
+| **claude-code-council** (this) | Council + Message Bus | ~2.7K lines |
 | [claude-code-agents](https://github.com/I-Onlabs/claude-code-agents) | 21 specialized agents | 85 KB |
 | [claude-code-skills](https://github.com/I-Onlabs/claude-code-skills) | 166+ methodology skills | 20.5 MB |
 
@@ -233,6 +235,6 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 **Created:** December 23, 2025
 **Status:** Production Ready ✅
-**Repository:** https://github.com/I-Onlabs/claude-code-hub
+**Repository:** https://github.com/I-Onlabs/claude-code-council
 
 **The DWA Council handles complex decisions so you don't have to!** 🎉
